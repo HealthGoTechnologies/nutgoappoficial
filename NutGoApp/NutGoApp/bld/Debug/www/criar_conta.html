@@ -1,0 +1,45 @@
+﻿    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div ng-controller="UsuarioCtrl as usuarioSimples">
+            <div>
+
+                <h1 class="logo-name">IN+</h1>
+
+            </div>
+            <h3>Cadastro</h3>
+            
+            <div class="alert alert-warning" ng-style="msgWarning">
+                {{msgErro}}
+            </div>
+
+            <form class="m-t" role="form" name="formCadastroUsuario"
+                  ng-submit="usuarioSimples.cadastrarUsuario()">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name"
+                           ng-model="usuarioSimples.usuarioSimples.Nome"
+                           required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail"
+                           ng-model="usuarioSimples.usuarioSimples.Email"
+                           required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Senha"
+                           ng-model="usuarioSimples.usuarioSimples.Senha"
+                           required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Confirmar Senha"
+                           ng-model="usuarioSimples.usuarioSimples.ConfirmarSenha"
+                           required>
+                </div>
+                <p class="text-muted text-center"><small>Ao se cadastrar, você concorda com a <a ui-sref="politica.politica_privacidade">Política de Privacidade</a> e os <a ui-sref="termos">Termos e condições</a> do NutGo</small></p>
+                <button type="submit" class="btn btn-primary block full-width m-b" 
+                        ng-disabled="formCadastroUsuario.$invalid">Cadastre-se</button>
+
+                <p class="text-muted text-center"><small>Você já tem conta?</small></p>
+                <a class="btn btn-sm btn-white btn-block" ui-sref="login">Login</a>
+            </form>
+
+        </div>
+    </div>

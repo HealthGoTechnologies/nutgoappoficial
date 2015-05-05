@@ -1,0 +1,93 @@
+﻿
+<div class="wrapper wrapper-content animated fadeInRight" 
+                        ng-controller="ConfiguracaoCtrl as configuracao">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Notificação</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Enviar notificação quando o nutricionista enviar ou alterar o plano alimentar</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" checked="checked"
+                                           ng-model="configuracao.enviarNotificacao"
+                                           ng-click="configuracao.configEnviarNotificacao()">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Receber alertas de refeição</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" checked
+                                           ng-model="configuracao.receberAlerta"
+                                           ng-click="configuracao.configReceberAlertas()">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               Quanto tempo antes da refeição, você deseja receber um alerta?
+                                <p><b>15 minutos antes</b></p>
+                            </td>
+                            <td>
+                                <div class="text-center">
+                                    <button class="btn btn-primary" 
+                                                
+                                                ng-click="modalAlerta()">Frequência</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="ibox float-e-margins">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Conexão</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manter a conexão com o Google</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" value=""
+                                           ng-model="configuracao.conexaoGoogle"
+                                           ng-click="configuracao.configManterConexaoGoogle()">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manter a conexão com o Facebook</td>
+                            <td>
+                                <label>
+                                    <input type="checkbox" value=""
+                                           ng-model="configuracao.conexaoFacebook"
+                                           ng-click="configuracao.configManterConexaoFacebook()">
+                                </label>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

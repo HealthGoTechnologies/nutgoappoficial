@@ -1,0 +1,51 @@
+<style>
+    .ativar_tab {
+        border-bottom: 5px solid #A4A4A4 !important;
+    }
+
+</style>
+
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="z-index: 1; margin-bottom: 0">
+       <center>
+        <ul class="nav navbar-top-links navbar-right" style="background: rgb(243, 243, 244);">
+            <!--<li>-->
+                <!--<span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>-->
+            <!--</li>-->
+            <li class="dropdown" style="display: inline-block; margin-left: 10px;" ng-class="{ativar_tab:tab===1}" dropdown>
+                <a class="dropdown-toggle count-info" style="padding: 6px;"
+                   ui-sref="perfil.perfil_usuario"
+                   ng-click="tab = 1">
+                    <i class="fa fa-user" style="font-size: 30px;"></i>
+                </a>
+
+            </li>
+            <li class="dropdown" style="display: inline-block; margin-left: 25px;" ng-class="{ativar_tab:tab===2}" dropdown>
+                <a class="dropdown-toggle count-info" style="padding: 6px;"
+                   ui-sref="plano.plano_alimentar"
+                   ng-click="tab = 2">
+                    <i class="fa fa-cutlery" style="font-size: 30px;"></i>
+                </a>
+
+            </li>
+            <li class="dropdown" style="display: inline-block; margin-left: 25px;" ng-class="{ativar_tab:tab===3}" dropdown>
+                <a class="dropdown-toggle count-info" style="padding: 6px;"
+                   ui-sref="ref.refeicao({id: 0})"
+                   ng-click="tab = 3">
+                    <i class="fa fa-spoon" style="font-size: 30px;"></i>
+                </a>
+
+            </li>
+            <li class="dropdown" style="display: inline-block; margin-left: 25px;" ng-class="{ativar_tab:tab===4}" dropdown>
+                <a class="dropdown-toggle count-info" style="padding: 6px;"
+                   ui-sref="pesquisa.pesquisa_principal"
+                   ng-click="tab = 4">
+                    <i class="fa fa-search" style="font-size: 30px;"></i>
+                </a>
+
+            </li>
+
+        </ul>
+        </center>
+    </nav>
+</div>

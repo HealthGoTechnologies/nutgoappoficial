@@ -1,0 +1,168 @@
+﻿
+<div class="wrapper wrapper-content animated fadeInRight">
+<div class="row">
+
+    <div class="form-group"
+         ng-controller="EstadoCtrl as estado">
+        <label class="font-noraml">Estado</label>
+
+        <div class="input-group" style="width: 100%;">
+            <select chosen id="estados" class="chosen-select" tabindex="4"
+                    ng-model="pesquisa.pesquisa.estado"
+                    ng-options="estado.nome for estado in estados"></select>
+        </div>
+    </div>
+
+    <div class="form-group"
+         ng-controller="CidadeCtrl as cidade">
+        <label class="font-noraml">Cidade</label>
+
+        <div class="input-group" style="width: 100%;">
+            <select chosen id="cidades" class="chosen-select" tabindex="4"
+                    ng-model="pesquisa.pesquisa.cidade"
+                    ng-options="cidade.nome for cidade in cidades"></select>
+        </div>
+    </div>
+
+    <div class="input-group" ng-controller="PesquisaCtrl as pesquisa">
+        <input type="text" class="form-control" placeholder="Pesquisar..."
+               ng-model="pesquisa.pesquisa.Palavras"><span class="input-group-btn">
+            <button type="button" class="fa fa-search fa-5x btn btn-primary" ng-click="pesquisa.pesquisaNutricionista()"></button>
+        </span>
+    </div>
+    <br />
+<div class="col-lg-4">
+    <div class="contact-box">
+        <a ui-sref="perfil.perfil_nutricionista">
+            
+            <div class="col-sm-8">
+                <h3><strong>Gabriel Leandro Voigt</strong></h3>
+
+                <p><i class="fa fa-map-marker"></i> Taguatinga</p>
+                <p><i class="fa fa-clock-o"></i> Horário de atendimento: 8h às 18h de Segunda a Sexta</p>
+                <!--
+                <address>
+                    <strong>Twitter, Inc.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+                    -->
+            </div>
+        </a>
+    </div>
+</div>
+
+    <div class="col-lg-4">
+        <div class="contact-box">
+            <a ui-sref="perfil.perfil_nutricionista">
+
+                <div class="col-sm-8">
+                    <h3><strong>Leandro da Silva</strong></h3>
+
+                    <p><i class="fa fa-map-marker"></i> Taguatinga</p>
+                    <p><i class="fa fa-clock-o"></i> Horário de atendimento: 8h às 18h de Segunda a Sexta</p>
+                    <!--
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                        -->
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="contact-box">
+            <a ui-sref="perfil.perfil_nutricionista">
+
+                <div class="col-sm-8">
+                    <h3><strong>José da Silva</strong></h3>
+
+                    <p><i class="fa fa-map-marker"></i> Taguatinga</p>
+                    <p><i class="fa fa-clock-o"></i> Horário de atendimento: 8h às 18h de Segunda a Sexta</p>
+                    <!--
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                        -->
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="contact-box">
+            <a ui-sref="perfil.perfil_nutricionista">
+
+                <div class="col-sm-8">
+                    <h3><strong>João Não Sei das Quantas</strong></h3>
+
+                    <p><i class="fa fa-map-marker"></i> Taguatinga</p>
+                    <p><i class="fa fa-clock-o"></i> Horário de atendimento: 8h às 18h de Segunda a Sexta</p>
+                    <!--
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                        -->
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="contact-box">
+            <a ui-sref="perfil.perfil_nutricionista">
+
+                <div class="col-sm-8">
+                    <h3><strong>João Pedro</strong></h3>
+
+                    <p><i class="fa fa-map-marker"></i> Taguatinga</p>
+                    <p><i class="fa fa-clock-o"></i> Horário de atendimento: 8h às 18h de Segunda a Sexta</p>
+                    <!--
+                    <address>
+                        <strong>Twitter, Inc.</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                        -->
+                </div>
+            </a>
+        </div>
+    </div>
+<div class="col-lg-4">
+    <div class="contact-box">
+        <a ui-sref="profile">
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img alt="image" class="img-circle m-t-xs img-responsive" src="img/a2.jpg">
+
+                    <div class="m-t-xs font-bold">Graphics designer</div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <h3><strong>John Smith</strong></h3>
+
+                <p><i class="fa fa-map-marker"></i> Riviera State 32/106</p>
+                <address>
+                    <strong>Twitter, Inc.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+            </div>
+            <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+</div>
+</div>

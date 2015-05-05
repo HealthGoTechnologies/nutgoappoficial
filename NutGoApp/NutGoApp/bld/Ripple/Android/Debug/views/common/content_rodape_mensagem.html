@@ -1,0 +1,33 @@
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Page wraper -->
+    <!-- ng-class with current state name give you the ability to extended customization your view -->
+    <div id="page-wrapper" style="min-height: 0px;" class="gray-bg {{$state.current.name}}">
+        <div style="position: fixed;
+                        width: 100%;
+                      display: block;
+                      float: none;
+                      z-index: 1000;">
+            <!-- Page wrapper -->
+            <div ng-include="'views/common/topnavbar.html'" style="position: relative;
+                                                              display: block;
+                                                              z-index: 1000;
+                                                              width: auto;
+                                                              float:none"></div>
+
+            <div ng-include="'views/common/sub_topnavbar.html'"></div>
+        </div>
+        <div style="clear: both;"></div>
+        <div style="position: inherit;">
+            <!-- Main view  -->
+            <div ui-view style="display: block; padding: 105px 0 0 0px;"></div>
+        </div>
+            <!-- Footer -->
+            <div ng-include="'views/common/footer_enviar_mensagem.html'"></div>
+
+        </div>
+    <!-- End page wrapper-->
+
+</div>
+<!-- End wrapper-->

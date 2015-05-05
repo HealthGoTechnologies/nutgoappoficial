@@ -1,0 +1,110 @@
+﻿<div class="row border-bottom" style="position: relative;
+                                      display: block;
+                                      z-index: 1000;
+                                      width: auto;">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; background: white none repeat scroll 0% 0%;">
+        
+        <div style="float: left; min-width: 10%; max-width: 80%; margin: 1.1em 0em 0em 1em; width: 30%;">
+            <ul class="nav navbar-top-links navbar-right" style="background: white;">
+                <li style="padding-left: 3%; width: 50%;">
+                    <div>
+                        <h4>{{ titulo}}</h4>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div style="max-width: 60%; min-width: 30%; width: 50%; position: relative; float: right; text-align: right; margin-right: 8%;">
+
+            <ul class="nav navbar-top-links navbar-right" style="background: white;">
+                <li class="dropdown" style="display: inline-block; padding-left: 1%;" dropdown>
+                    <a class="dropdown-toggle count-info" href dropdown-toggle>
+                        <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages" style="margin-left: -150px;">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a ui-sref="profile" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+
+                                <div>
+                                    <a ui-sref="conversa.mensagem_pessoal" style="color: gray; padding-left: 0px; font-size: 12px;">
+                                        <strong>Mike Loreipsum</strong> enviou uma mensagem para <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">3 dias atrás às 7:58 pm - 10.06.2014</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a ui-sref="chat.conversas">
+                                    <i class="fa fa-envelope"></i> <strong>Leia todas as mensagens</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" dropdown style="display: inline-block;">
+                    <a class="dropdown-toggle count-info" href dropdown-toggle>
+                        <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts" style="margin-left: -220px;">
+                        <li>
+                            <a ui-sref="inbox">
+                                <div>
+                                    <i class="fa fa-bell fa-fw"></i> Próxima refeição
+                                    <span class="pull-right text-muted small">4 minutos atrás</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a ui-sref="profile">
+                                <div>
+                                    <i class="fa fa-bell fa-fw"></i> Atualização do cadastro
+                                    <span class="pull-right text-muted small">12 minutos atrás</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a ui-sref="grid_options">
+                                <div>
+                                    <i class="fa fa-bell fa-fw"></i> Agendamento
+                                    <span class="pull-right text-muted small">4 minutos atrás</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a ui-sref="alertas.notificacao_alertas">
+                                    <strong>Veja todos os alertas</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" style="display: inline-block; margin-right: 0px;" dropdown>
+                    <a class="dropdown-toggle count-info" style="padding-bottom: 10%; padding-top: 15%;" href dropdown-toggle>
+                        <img alt="image" style="width: 85%;" class="img-circle" src="img/profile_small.jpg" />
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs" style="margin-left: -195px;">
+                        <li><a ui-sref="perfil.perfil_usuario">Alterar foto</a></li>
+                        <li><a ui-sref="configuracao.configuracao_aplicativo">Configurações</a></li>
+                        <li><a ui-sref="termos_privacidade.termo_uso">Termos de Uso e Privacidade</a></li>
+                        <li><a ui-sref="contato.contato_healthgo">Contato</a></li>
+                        <li><a ui-sref="ajuda.ajuda_usuario">Ajuda</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="logout">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+    </nav>
+</div>

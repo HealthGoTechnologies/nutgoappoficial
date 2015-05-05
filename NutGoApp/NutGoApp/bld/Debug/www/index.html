@@ -1,0 +1,135 @@
+﻿<!--
+* INSPINIA - Responsive Admin Theme
+* Copyright 2015 Webapplayers.com
+* Version 1.9
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="nutGoApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Font awesome -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+<body class="gray-bg" ng-controller="MainCtrl as main">
+
+    <!-- Main view  -->
+    <div ui-view></div>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="js/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/plugins/jquery-ui/jquery-ui.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- MetsiMenu -->
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Peace JS -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.2.5/angular-locale_pt-br.js"></script>
+        -->
+    <!-- Main Angular scripts-->
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/angular/angular-resource.min.js"></script>
+    <script src="js/plugins/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="js/angular-translate/angular-translate.min.js"></script>
+    <script src="js/ui-router/angular-ui-router.min.js"></script>
+    <script src="js/angular/angular-cookies.min.js"></script>
+    <script src="js/bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+    <script src="js/plugins/ngStorage/ngStorage.min.js"></script>
+    <!--
+    <script src="js/plugins/uiMask/masks.js"></script>
+        -->
+
+    <!--
+     You need to include this script on any page that has a Google Map.
+     When using Google Maps on your own site you MUST signup for your own API key at:
+     https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+     After your sign up replace the key in the URL below..
+    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70"></script>
+
+    <!-- Angular App Script 
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+        -->
+
+    <script src="js/app/module/app.js"></script>
+    <script src="js/app/state/config.js"></script>
+    
+
+
+    <!-- Controllers -->
+    <script src="js/app/controller/AjudaCtrl.js"></script>
+    <script src="js/app/controller/ChatCtrl.js"></script>
+    <script src="js/app/controller/CookieCtrl.js"></script>
+    <script src="js/app/controller/LoginCtrl.js"></script>
+    <script src="js/app/controller/LoginFacebookCtrl.js"></script>
+    <script src="js/app/controller/LoginGoogleCtrl.js"></script>
+    <script src="js/app/controller/LogoutCtrl.js"></script>
+    <script src="js/app/controller/MainCtrl.js"></script>
+    <script src="js/app/controller/PesquisaCtrl.js"></script>
+    <script src="js/app/controller/UsuarioCtrl.js"></script>
+    <script src="js/app/controller/CidadeCtrl.js"></script>
+    <script src="js/app/controller/EstadoCtrl.js"></script>
+    <script src="js/app/controller/PaisCtrl.js"></script>
+    <script src="js/app/controller/RefeicaoCtrl.js"></script>
+    <script src="js/app/controller/PlanoAlimentarCtrl.js"></script>
+    <script src="js/app/controller/ConfiguracaoCtrl.js"></script>
+    <!-- fim - Controllers -->
+    <!-- Service -->
+    
+    <!-- fim - Service -->
+    <!-- Factory -->
+    <script src="js/app/factory/UsuarioService.js"></script>
+    <script src="js/app/factory/InterceptorService.js"></script>
+    <script src="js/app/factory/deviceReadyService.js"></script>
+    <script src="js/app/factory/getCurrentPositionService.js"></script>
+    <script src="js/app/factory/getWeatherService.js"></script>
+    <script src="js/app/factory/CidadeService.js"></script>
+    <script src="js/app/factory/EstadoService.js"></script>
+    <script src="js/app/factory/PaisService.js"></script>
+    <script src="js/app/factory/UtilService.js"></script>
+    <script src="js/app/factory/PlanoAlimentarService.js"></script>
+    <!-- fim - Factory -->
+    
+
+    <script src="js/app/directives/directives.js"></script>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+</body>
+</html>

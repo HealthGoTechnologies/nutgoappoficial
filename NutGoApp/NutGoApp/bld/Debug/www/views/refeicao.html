@@ -1,0 +1,56 @@
+﻿
+<div class="wrapper wrapper-content animated fadeIn">
+
+<div class="row">
+    <div class="col-lg-6" ng-controller="RefeicaoCtrl as refeicao">
+        <div class="ibox float-e-margins">
+           
+            <div class="ibox-content" ng-show="{{refeicao.refeicaoSelecionada[0].isSuccess}}">
+                <div class="panel-body">
+                    <div class="panel-group">
+                        <center><h3>{{refeicao.refeicaoSelecionada[0].titulo}}</h3></center>
+
+                        <center><label class="checkbox">{{refeicao.refeicaoSelecionada[0].horario}}</label></center>
+
+                        <accordion close-others="oneAtATime">
+
+                            <accordion-group is-open="status.open" ng-repeat="opcao in refeicao.opcoes">
+                                <accordion-heading>
+                                    {{refeicao.refeicaoSelecionada[0].titulo}} - {{opcao.tituloOpcao}}<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                                </accordion-heading>
+                                    {{opcao.conteudo}}
+                                <div class="ibox float-e-margins">
+                                    
+                                    <div class="ibox-content">
+                                        <div style="float:left; margin-top: 10px;">
+                                            <h3>
+                                                Comeu?
+                                            </h3>
+                                        </div>
+                                        <div class="checkbox" style="float:left;"><label> <input icheck type="checkbox" ng-checked="refeicao.opcaoSelecionada({{opcao.opcao}})" ng-model=""> Sim </label></div>
+                                        
+                                    </div>
+
+                                </div>
+                            </accordion-group>
+
+                        </accordion>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="ibox-content" ng-hide="{{refeicao.refeicaoSelecionada[0].isSuccess}}">
+                <div class="panel-body">
+                    <div class="panel-group">
+                        <center><h3>Nenhum refeiçao.</h3></center>
+                        
+                    </div>
+                </div>
+            </div></div>
+    </div>
+   
+</div>
+
+</div>

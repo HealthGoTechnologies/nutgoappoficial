@@ -1,0 +1,125 @@
+﻿<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="widget-head-color-box navy-bg p-lg text-center">
+                <div class="m-b-md">
+                    <h2 class="font-bold no-margins">
+                        Gabriel Voigt Leandro
+                    </h2>
+                </div>
+                <img src="/img/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">
+            </div>
+            <div class="widget-text-box">
+              
+                <div class="ibox float-e-margins">
+                    
+                    <div class="ibox-content" style="padding: 0px;">
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><b>Sexo</b></td>
+                                    <td>Masculino</td>
+                                </tr>
+                                <tr>
+                                    <td>Data de nascimento</td>
+                                    <td>16/08/1989</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>gabrielvoigt@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>       
+                      
+                <div class="text-right">
+                    <a class="btn  btn-primary btn-sm" ui-sref="cadastro_usuario.cadastro_completo">
+                        Alterar
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Gr�fico -->
+
+    <div class="wrapper wrapper-content animated fadeInRight" ng-controller="flotChartCtrl as charts">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>
+                            Peso Kg
+                        </h5>
+                       
+                    </div>
+                    <div class="ibox-content">
+                        <div class="flot-chart">
+                            <div flot class="flot-chart-content" dataset="charts.flotChartData" options="charts.flotBarOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Peso Kg</h5>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="flot-chart">
+                            <div flot class="flot-chart-content" dataset="charts.flotChartData" options="charts.flotLineOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Massa Magra e de Gordura</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="flot-chart">
+                            <div flot class="flot-chart-content" dataset="charts.flotPieData" options="charts.flotPieOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Peso Total</h5>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="flot-chart">
+                            <div flot class="flot-chart-content" dataset="charts.flotLineAreaData" options="charts.flotLineAreaOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Multiple Axes Line Chart Example </h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="flot-chart">
+                            <div flot class="flot-chart-content" dataset="charts.flotMultiData" options="charts.flotMultiOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
